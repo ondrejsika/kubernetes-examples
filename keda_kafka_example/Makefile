@@ -30,3 +30,6 @@ SCALE_PRODUCER_REPLICAS = 10
 
 scale-producer:
 	kubectl scale deployment producer --replicas=${SCALE_PRODUCER_REPLICAS}
+
+cleanup:
+	kubectl delete -f ./k8s
